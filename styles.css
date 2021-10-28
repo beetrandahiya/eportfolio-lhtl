@@ -147,10 +147,42 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
   backdrop-filter: blur( 4px );
   -webkit-backdrop-filter: blur( 4px );
   border: 1px solid rgba( 255, 255, 255, 0.18 );
+  outline:none;
 }
 .btn-tab:hover{
   box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
 }
+
+.btn-tab.active {
+  background: rgba( 150, 150, 150, 0.25 );
+
+}
+.tabcontent {
+  display: none;
+ 
+}
+
+.tabcontent {
+  animation: fadeEffect 1s; /* Fading effect takes 1 second */
+}
+
+/* Go from zero to full opacity */
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media screen and (orientation:portrait) {
   
